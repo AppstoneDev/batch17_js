@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Akashs webpage</title>
+        <style>
+            .box{
+                height: 100px;
+                width: 100px;
+                background-color: green;
+                margin: 20px;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="box1" class="box" onclick="changeBoxColor('box1')">
+        </div>
+
+        <div id="box2" class="box" onclick="changeBoxColor('box2')">
+        </div>
+
+        <div id="box3" class="box" onclick="changeBoxColor('box3')"></div>
+
+        <input id="colorInput" />
+        <button>change color</button>
+
+        <script>
+            function changeBoxColor(boxID){
+                var iColor = document.getElementById('colorInput').value;
+                document.getElementById(boxID).style.backgroundColor = iColor;
+            }
+        </script>
+    </body>
+</html>
